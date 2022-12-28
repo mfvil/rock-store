@@ -1,10 +1,11 @@
-import Greeting from '@/components/Greeting'
 import Header from '@/components/Header'
+import RockCards from '@/components/RockCards'
 
 export default function IndexPage() {
   return (
-    <div>
+    <div className="flex flex-col items-center ">
       <Header />
+      <RockCards />
     </div>
   )
 }

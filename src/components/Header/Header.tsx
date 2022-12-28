@@ -1,21 +1,23 @@
 import React from 'react'
 
-const Header = ({}): JSX.Element => {
+const Header = (): JSX.Element => {
   return (
-    <div className="bg-white flex flex-row justify-between">
-      <h1>Rock Store</h1>
+    <div className="flex flex-row justify-between  border-black h-20 shadow-brown shadow-md p-6 w-full">
+      <h1>THE ROCK STORE</h1>
       <ul className="flex flex-row ">
         <li className="mx-5">
-          <a href="#">Regular Rocks</a>
+          <a href="#">REGULAR ROCKS</a>
         </li>
         <li className="mx-5">
-          <a href="#">Cool Rocks</a>
+          <a href="#">COOL ROCKS</a>
         </li>
         <li className="mx-5">
-          <a href="#">Strange and Rare Rocks</a>
+          <a href="#">STRANGE AND RARE ROCKS</a>
         </li>
         <li>
-        🛒
+          <a href="#">
+            <span role="img">🛒</span>
+          </a>
         </li>
       </ul>
     </div>
