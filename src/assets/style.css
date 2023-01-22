@@ -9,7 +9,7 @@
 
 @layer base {
   body{
-    @apply max-h-full bg-beige;
+    @apply max-h-full;
   }
   h1 {
     @apply text-2xl text-brown;

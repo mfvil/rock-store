@@ -1,6 +1,9 @@
-import React from 'react'
+import { ctx } from '@/context/useContext'
+import { StateInterface } from '@/globalTypes'
+import { useContext } from 'react'
 
 const Header = (): JSX.Element => {
+  const { shoppingCart } = useContext<StateInterface>(ctx)
   return (
     <div className="flex flex-row justify-between  border-black h-20 shadow-brown shadow-md p-6 w-full">
       <h1>THE ROCK STORE</h1>
@@ -16,7 +19,7 @@ const Header = (): JSX.Element => {
         </li>
         <li>
           <a href="#">
-            <span role="img">🛒</span>
+            <span role="img">🛒{shoppingCart.length}</span>
           </a>
         </li>
       </ul>
